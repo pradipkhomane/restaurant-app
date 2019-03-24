@@ -1,7 +1,8 @@
 # Restaurant App
 
-The Rest API endpoint for app is built using Spring Boot, Spring MVC and Spring Data Mongo DB. To use checkout and import as existing maven
-project in Eclipse or Spring Tool Suite.  
+The Rest API endpoint for app is built using Spring Boot, Spring MVC and Spring Data Mongo DB. To use checkout and import as existing maven project in Eclipse or Spring Tool Suite.
+
+This will display list of restaurants in Database Server Mongo DB and allow you to add new restuarants with post.
 
 This Angular project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.5.
 
