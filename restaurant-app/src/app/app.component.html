@@ -1,0 +1,32 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+  <form #todoForm="ngForm" >
+    <div class="form-group">
+      <h1 class="text-center text-primary">Restaurant App</h1>
+      <div class="input-group-prepend">
+        <input type="text" #todo class="form-control" placeholder="Search restaurant" name="todo" ngModel>
+        <span class="input-group-text">
+          <i class="material-icons">search</i>
+        </span>
+      </div>
+    </div>
+    <div class="card text-center" *ngFor="let restaurant of restaurants">
+      <div class="card-header">
+        {{restaurant.restaurantName}}
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Average Ratings : {{ restaurant.aggregateRating }}</h5>
+        <p class="card-text">{{ restaurant.cuisines }}</p>
+        <a href="#" class="btn btn-primary">Reviews</a>
+      </div>
+      <div class="card-footer text-muted">
+        <div class="card-text">Average Cost for Two : {{ restaurant.avgCostForTwo }}</div>
+        <div >Currency : {{ restaurant.currency }}</div>
+        <div class="card-text">Rating : {{ restaurant.ratingText }}</div>
+        <div class="card-text">Votes : {{ restaurant.votes }}</div>
+      </div>
+    </div>
+  </form>
+
+</div>
+<router-outlet></router-outlet>
